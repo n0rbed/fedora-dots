@@ -29,6 +29,8 @@ return {
         'mfussenegger/nvim-dap',
     },
 
+    'alvan/vim-closetag', -- HTML autocomplete.
+
   "shaunsingh/nord.nvim", -- colorscheme
   "willothy/nvim-cokeline", -- buffer line (top)
   "nvim-lualine/lualine.nvim", -- status line (bottom)

@@ -89,7 +89,38 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
           })
-
+          
+        lspconfig.pylsp.setup{
+             on_attach = on_attach,
+             capabilities = capabilities,
+             capabilities = lspCapabilities,
+            settings = {
+                pylsp = {
+                    plugins = {
+                        black = {
+                            enabled = true,
+                        },
+                        flake8 = {
+                            enabled = true,
+                            ignore = true,
+                        },
+                        mypy = {
+                            enabled = true,
+                        },
+                        jedi_completion = {
+                            enabled = true,
+                            include_params = true,
+                        },
+                        pycodestyle = {
+                            enabled = false,
+                        },
+                        pyflakes = {
+                            enabled = false,
+                        },
+                    },
+                },
+            },
+        }
         lsp.setup()
         end,
   }
