@@ -39,8 +39,8 @@ return {
             css = {
               lint = { unknownAtRules = "ignore" },
             },
-          })
 
+          })
           -- HTML: html
           lspconfig.html.setup({
             capabilities = capabilities,
@@ -66,11 +66,6 @@ return {
             },
           })
 
-          -- Markdown: marksman
-          lspconfig.marksman.setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-          })
 
           -- Python: pyright
           lspconfig.pyright.setup({
@@ -78,17 +73,6 @@ return {
             on_attach = on_attach,
           })
 
-          -- Rust: rust_analyzer
-          lspconfig.rust_analyzer.setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-          })
-
-          -- TypeScript: tsserver
-          lspconfig.tsserver.setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-          })
           
         lspconfig.pylsp.setup{
              on_attach = on_attach,

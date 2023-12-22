@@ -46,6 +46,8 @@ return {
   "norcalli/nvim-colorizer.lua", -- highlight color values
 
 
+  'lervag/vimtex', --LaTeX
+
 }
 
 

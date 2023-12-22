@@ -4,7 +4,7 @@ return {
       "nvim-lua/plenary.nvim",
     },
 
-    config = function()
+    init = function()
         local builtin = require("telescope.builtin")
         local telescope = require("telescope")
 
